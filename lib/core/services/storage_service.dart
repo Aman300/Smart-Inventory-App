@@ -27,6 +27,6 @@ class StorageService {
   }
 
   String getHost() {
-    return _prefs.getString(_hostKey) ?? '127.0.0.1';
+    return _prefs.getString(_hostKey) ?? '72.60.97.186';
   }
 }
