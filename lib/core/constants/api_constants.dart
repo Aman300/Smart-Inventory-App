@@ -1,8 +1,8 @@
 class ApiConstants {
   // Default host configuration
   // Use '10.0.2.2' for default Android Emulator to access localhost
-  // Use '127.0.0.1' or 'localhost' for iOS simulator or desktop builds
-  static String _host = '127.0.0.1';
+  // Use '72.60.97.186' or 'localhost' for iOS simulator or desktop builds
+  static String _host = '72.60.97.186';
   static const int port = 5001;
 
   static String get host => _host;
