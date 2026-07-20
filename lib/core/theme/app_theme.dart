@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // Custom premium color palettes
@@ -20,6 +21,7 @@ class AppTheme {
         brightness: Brightness.light,
       ),
       scaffoldBackgroundColor: _lightBackgroundColor,
+      textTheme: GoogleFonts.outfitTextTheme(ThemeData.light().textTheme),
       cardTheme: CardThemeData(
         elevation: 1,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -75,6 +77,7 @@ class AppTheme {
         brightness: Brightness.dark,
       ),
       scaffoldBackgroundColor: _darkBackgroundColor,
+      textTheme: GoogleFonts.outfitTextTheme(ThemeData.dark().textTheme),
       cardTheme: CardThemeData(
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

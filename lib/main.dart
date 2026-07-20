@@ -14,7 +14,7 @@ void main() async {
   final sharedPrefs = await SharedPreferences.getInstance();
 
   // Read saved API server IP and apply to static config before networking starts
-  final savedHost = sharedPrefs.getString('api_host') ?? '72.60.97.186';
+  final savedHost = sharedPrefs.getString('api_host') ?? ApiConstants.host;
   ApiConstants.host = savedHost;
 
   runApp(

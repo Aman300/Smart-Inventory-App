@@ -1,3 +1,4 @@
+import '../constants/api_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class StorageService {
@@ -27,6 +28,6 @@ class StorageService {
   }
 
   String getHost() {
-    return _prefs.getString(_hostKey) ?? '72.60.97.186';
+    return _prefs.getString(_hostKey) ?? ApiConstants.host;
   }
 }
